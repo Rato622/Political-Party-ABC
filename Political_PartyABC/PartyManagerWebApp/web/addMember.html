@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Add Member Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Welcome to Add Member Page.</h1>
+        <form action="AddMemberServlet.do" method="POST">
+            <table>
+                <tr>
+                    <td>Member ID Number : </td>
+                    <td><input type="text" name="idno" required=""></td>
+                </tr>
+                <tr>
+                    <td>Member Name : </td>
+                    <td><input type="text" name="name" required=""></td>
+                </tr>
+                <tr>
+                    <td>Member Surname : </td>
+                    <td><input type="text" name="surname" required=""></td>
+                </tr>
+                <tr>
+                    <td>Member Birth date : </td>
+                    <td><input type="date" name="birthdate" required=""></td>
+                </tr>
+                <tr>
+                    <td>Member Email Address : </td>
+                    <td><input type="email" name="emailaddresses" required=""></td>
+                </tr>
+                <tr>
+                    <td>Member Cell Numbers : </td>
+                    <td><input type="text" name="cellnumbers" required=""></td>
+                </tr>
+                <tr>
+                    <td>Member Street : </td>
+                    <td><input type="text" name="street" required=""></td>
+                </tr>
+                <tr>
+                    <td>Member Area : </td>
+                    <td><input type="text" name="area" required=""></td>
+                </tr>
+                <tr>
+                    <td>Member Area Code : </td>
+                    <td><input type="text" name="areaCode" required=""></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Add Member"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

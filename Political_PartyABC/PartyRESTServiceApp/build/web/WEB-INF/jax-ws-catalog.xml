@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://UZU-DESIGN05:8080/ValidatorConverterSOAPService/ValidatorConverterSOAPService?wsdl" uri="wsdl/UZU-DESIGN05_8080/ValidatorConverterSOAPService/ValidatorConverterSOAPService.wsdl"/>
+    <system systemId="http://UZU-DESIGN05:8080/ValidatorConverterSOAPService/ValidatorConverterSOAPService?xsd=1" uri="wsdl/UZU-DESIGN05_8080/ValidatorConverterSOAPService/ValidatorConverterSOAPService.xsd_1.xsd"/>
+</catalog>

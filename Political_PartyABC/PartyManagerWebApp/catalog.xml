@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://UZU-DESIGN05:8080/PartyRESTServiceApp/PartyRESTService?wsdl" uri="src/conf/xml-resources/web-service-references/PartyRESTService/wsdl/UZU-DESIGN05_8080/PartyRESTServiceApp/PartyRESTService.wsdl"/>
+    <system systemId="http://UZU-DESIGN05:8080/PartyRESTServiceApp/PartyRESTService?xsd=1" uri="src/conf/xml-resources/web-service-references/PartyRESTService/wsdl/UZU-DESIGN05_8080/PartyRESTServiceApp/PartyRESTService.xsd_1.xsd"/>
+    <system systemId="http://UZU-DESIGN05:8080/PartyRESTServiceApp/PartyRESTService?xsd=2" uri="src/conf/xml-resources/web-service-references/PartyRESTService/wsdl/UZU-DESIGN05_8080/PartyRESTServiceApp/PartyRESTService.xsd_2.xsd"/>
+</catalog>

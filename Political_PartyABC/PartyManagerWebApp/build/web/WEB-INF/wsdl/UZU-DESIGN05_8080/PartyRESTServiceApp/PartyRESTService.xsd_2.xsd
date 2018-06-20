@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://jws.party.gov.za/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://jws.party.gov.za/">
+
+<xs:element name="Exception" type="tns:Exception"/>
+
+<xs:element name="addMember" type="tns:addMember"/>
+
+<xs:element name="addMemberResponse" type="tns:addMemberResponse"/>
+
+<xs:element name="address" type="tns:address"/>
+
+<xs:element name="count" type="tns:count"/>
+
+<xs:element name="countREST" type="tns:countREST"/>
+
+<xs:element name="countRESTResponse" type="tns:countRESTResponse"/>
+
+<xs:element name="countResponse" type="tns:countResponse"/>
+
+<xs:element name="create" type="tns:create"/>
+
+<xs:element name="edit" type="tns:edit"/>
+
+<xs:element name="edit_1" type="tns:edit_1"/>
+
+<xs:element name="find" type="tns:find"/>
+
+<xs:element name="findAll" type="tns:findAll"/>
+
+<xs:element name="findAllResponse" type="tns:findAllResponse"/>
+
+<xs:element name="findRange" type="tns:findRange"/>
+
+<xs:element name="findRangeResponse" type="tns:findRangeResponse"/>
+
+<xs:element name="findRange_1" type="tns:findRange_1"/>
+
+<xs:element name="findRange_1Response" type="tns:findRange_1Response"/>
+
+<xs:element name="findResponse" type="tns:findResponse"/>
+
+<xs:element name="find_1" type="tns:find_1"/>
+
+<xs:element name="find_1Response" type="tns:find_1Response"/>
+
+<xs:element name="member" type="tns:member"/>
+
+<xs:element name="remove" type="tns:remove"/>
+
+<xs:element name="remove_1" type="tns:remove_1"/>
+
+<xs:element name="remove_1Response" type="tns:remove_1Response"/>
+
+<xs:element name="updateMember" type="tns:updateMember"/>
+
+<xs:element name="updateMemberResponse" type="tns:updateMemberResponse"/>
+
+<xs:complexType name="find">
+<xs:sequence>
+<xs:element name="id" type="xs:anyType" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:member" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="member">
+<xs:sequence>
+<xs:element name="address" type="tns:address" minOccurs="0"/>
+<xs:element name="birthdate" type="xs:string" minOccurs="0"/>
+<xs:element name="cellnumbers" type="xs:string" minOccurs="0"/>
+<xs:element name="emailaddresses" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:long" minOccurs="0"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="surname" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="address">
+<xs:sequence>
+<xs:element name="area" type="xs:string" minOccurs="0"/>
+<xs:element name="areaCode" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:long" minOccurs="0"/>
+<xs:element name="street" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="find_1">
+<xs:sequence>
+<xs:element name="id" type="xs:long" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="find_1Response">
+<xs:sequence>
+<xs:element name="return" type="tns:member" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="countREST">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="countRESTResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="create">
+<xs:sequence>
+<xs:element name="entity" type="tns:member" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findRange_1">
+<xs:sequence>
+<xs:element name="from" type="xs:int" minOccurs="0"/>
+<xs:element name="to" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findRange_1Response">
+<xs:sequence>
+<xs:element name="return" type="tns:member" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findRange">
+<xs:sequence>
+<xs:element name="range" type="xs:int" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findRangeResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:member" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="edit">
+<xs:sequence>
+<xs:element name="entity" type="tns:member" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="edit_1">
+<xs:sequence>
+<xs:element name="id" type="xs:long" minOccurs="0"/>
+<xs:element name="entity" type="tns:member" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addMember">
+<xs:sequence>
+<xs:element name="memberXML" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addMemberResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="Exception">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateMember">
+<xs:sequence>
+<xs:element name="memberXML" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateMemberResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="remove_1">
+<xs:sequence>
+<xs:element name="id" type="xs:long" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="remove_1Response">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="remove">
+<xs:sequence>
+<xs:element name="entity" type="tns:member" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findAll">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="findAllResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:member" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="count">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="countResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
